@@ -25,8 +25,8 @@ steps:
     dockerComposeFile: '**/docker-compose.yml'
     action: 'Run a Docker Compose command'
     #dockerComposeCommand: 'up'
-    azureSubscriptionEndpoint: $(azureSubscriptionEndpoint)
-    azureContainerRegistry: $(azureContainerRegistry)
+    #azureSubscriptionEndpoint: $(azureSubscriptionEndpoint)
+    #azureContainerRegistry: $(azureContainerRegistry)
     projectName: $(Build.Repository.Name)
     qualifyImageNames: true
     buildImages: true
