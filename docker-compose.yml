@@ -1,7 +1,7 @@
 services:
 
   app:
-    image: myapp
+    image: shanthregistry.azurecr.io/ashwin-web:latest
     depends_on:
        - db
     ports:
