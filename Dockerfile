@@ -4,7 +4,7 @@
 #EXPOSE 8080
 #CMD ["startup.sh", "run"]
 
-FROM openjdk:8
+#FROM openjdk:8
 EXPOSE 8080
-ADD target/ashwin-web.jar ashwin-web.jar
+#ADD target/ashwin-web.jar ashwin-web.jar
 ENTRYPOINT ["java","-jar","/ashwin-web.jar"]
