@@ -1,7 +1,7 @@
 services:
 
   app:
-    image: shanthregistry.azurecr.io/ashwin-web:latest
+    image: shanthregistry.azurecr.io/springdocker:latest
     depends_on:
        - db
     build : .
