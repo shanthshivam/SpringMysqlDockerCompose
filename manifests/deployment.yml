@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: shanthshivamspringmysqldockercompose 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: shanthshivamspringmysqldockercompose
+  template:
+    metadata:
+      labels:
+        app: shanthshivamspringmysqldockercompose 
+    spec:
+      containers:
+        - name: shanthshivamspringmysqldockercompose 
+          image: shanthregistry.azurecr.io/shanthshivamspringmysqldockercompose
+          ports:
+          - containerPort: 8080
