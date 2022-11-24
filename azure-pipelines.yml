@@ -23,4 +23,5 @@ steps:
     containerregistrytype: 'Container Registry'
     dockerRegistryEndpoint: 'shanthregistry'
     dockerComposeFile: '**/docker-compose.yml'
-    action: Build services
+    action: 'Run a Docker Compose command'
+    dockerComposeCommand: 'docker-compose up'
